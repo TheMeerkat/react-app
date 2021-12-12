@@ -8,7 +8,6 @@ export class AccountService {
     }
 
     async getBalanceByCardNumber(cardNumber) {
-        console.log('=>', this._host);
         return await axios.post(`${this._host}/accounts/balance`, {
             "cn": String(cardNumber)
         });

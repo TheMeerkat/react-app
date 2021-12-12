@@ -1,0 +1,30 @@
+[
+    {
+        "_id": "5bc1314235df98",
+        "user": {
+            "firstName": "James",
+            "lastName": "Smith",
+            "phone": "3129891233"
+        },
+        "account": {
+            "cardNumber": "5141xxxxxxxx9082",
+            "expiration": "062023",
+            "pin": "****",
+            "balance": 112.38
+        }
+    },
+    {
+        "_id": "5bc134dd235df98",
+        "user": {
+            "firstName": "Paula",
+            "lastName": "Bean",
+            "phone": "3176541213"
+        },
+        "account": {
+            "cardNumber": "5141xxxxxxxx9844",
+            "expiration": "062022",
+            "pin": "****",
+            "balance": 62.78
+        }
+    }
+]

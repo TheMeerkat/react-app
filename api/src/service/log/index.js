@@ -1,4 +1,4 @@
-import { ConsoleLogger } from './ConsoleLogger';
+import { ConsoleLogger } from './ConsoleLogger.js';
 
 export {
     ConsoleLogger

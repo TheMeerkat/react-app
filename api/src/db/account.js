@@ -1,4 +1,5 @@
-import { ConsoleLogger } from '../services/log';
+import { ConsoleLogger } from '../service/log/index.js';
+import fs from 'fs';
 
 class Account {
 
@@ -10,21 +11,16 @@ class Account {
             this._logger = logger;
         }
         try {
-           this. _data = require('../store/data.json');
+            let rawdata = fs.readFileSync(new URL('../../store/data.json', import.meta.url));
+            this._data = JSON.parse(rawdata);
         } catch (e) {
-            this._logger.error('An error occurred retrieving data from the data file.');
+            this._logger.error(`An error occurred retrieving data from the data file. ${e.message}`);
         }
     }
+};
 
-    getAccountByCardNumber(accountNumber) {
-        let profile = this._data.find(d => {
-            return a.account.cardNumber === accountNumber;
-        });
+Account.all = () => {
+    return (new Account())._data;
+};
 
-        if (!profile) {
-            return null;
-        }
-
-        return profile.account;
-    }
-}
+export default Account;

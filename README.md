@@ -50,4 +50,6 @@ Once the application is built you can find it in the `app/build` directory.  You
 Nodejs v17.x was causing issues when attempting to start or build the web application.  These commands run through `npm run <command>` have the following option set `--openssl-legacy-provider` which is not ideal but was temporary to 
 get things running as fast as possible.
 
-
+You may experience CORS errors while running the API and trying to communicate 
+via the web application. To get around this temporarily I installed the `moesif 
+cors` extension for chrome and enabled it.  You can target specific IP's but I highly recommend turning off this extension if you decide to use it after evaluating this project.

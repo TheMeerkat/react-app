@@ -18,12 +18,7 @@ router.get('/', function(req, res) {
     });
 });
 
-// If time create controller
-router.get('/accounts', function(req, res) {
-    res.json(new Response(true, accountServiceProvider.getAllAccounts()));
-});
-
-router.get('/accounts/balance', function(req, res) {
+router.post('/accounts/balance', function(req, res) {
     let cardNumber = req.body ? req.body.cn : null;
     let errorMessage = null;
 

@@ -14,8 +14,8 @@ export class AccountService {
     }
 
     getAccountByCardNumber(accountNumber) {
-        let profile = AccountProvider.all().find(d => {
-            return a.account.cardNumber === accountNumber;
+        let profile = AccountProvider.all().find(user => {
+            return user.account.cardNumber === accountNumber;
         });
 
         if (!profile) {

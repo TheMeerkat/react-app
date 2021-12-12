@@ -53,3 +53,5 @@ get things running as fast as possible.
 You may experience CORS errors while running the API and trying to communicate 
 via the web application. To get around this temporarily I installed the `moesif 
 cors` extension for chrome and enabled it.  You can target specific IP's but I highly recommend turning off this extension if you decide to use it after evaluating this project.
+
+The data provided looked like it may be BSON.  The deserialization I did not get too, as a result, there is a `api/store/data.json` that is used to read user data.
